@@ -12,6 +12,7 @@ font-family: 'Poppins', sans-serif;
     --white: #fff;
     --purpule: #5C62EC;
 
+    --page-text-color: var(--black);
     --dark-bg: var(--black);
     --dark-border: var(--black-border);
     --header-text: var(--white);
@@ -20,7 +21,8 @@ font-family: 'Poppins', sans-serif;
 
 html, body{
     font-family: 'DM Sans', sans-serif;
-    background-color: var(--dark-bg);
+    letter-spacing: -0.5px;
+    color: var(--page-text-color);
 }
 
 .container{
@@ -35,6 +37,7 @@ html, body{
     background-color: var(--dark-bg);
     border-bottom: 1px solid var(--dark-border);
     padding: 20px 0;
+    letter-spacing: normal;
 }
 
 .header__wrapper{
@@ -95,3 +98,94 @@ html, body{
 }
 
 /* Header end */
+
+/* Main start */
+
+/* about-me start */
+
+.about-me {
+    padding: 40px 0;
+    min-height: 695px;
+
+    background-color: var(--dark-bg);
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-bg);
+    background-image: url(./../img/about-me-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+
+    color: var(--white);
+    text-align: center;
+}
+
+.about-me__wrapper {
+    padding: 0 15px;
+    max-width: 660px;
+}
+
+.about-me__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.about-me__title strong{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about-me__title em{
+    font-style: normal;
+    color: var(--accent);
+}
+
+.about-me__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.333;
+}
+
+.about-me__text p + p{
+    margin-top: 1em;
+}
+
+.btn {
+    padding: 12px 28px;
+    background-color: var(--accent);
+    border-radius: 5px;
+    
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+
+    transition: all .3s ease-in;
+}
+
+.btn:hover{
+    background-color: #363872;
+}
+
+.btn:active{
+    position: relative;
+    top: 1px;
+}
+
+
+
+
+
+
+
+/* about-me end */
+
+
+/* Main end */
