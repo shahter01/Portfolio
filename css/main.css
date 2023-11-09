@@ -6,6 +6,249 @@ font-family: 'DM Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
+:root{
+    --black: #171718;
+    --black-border: #26292D;
+    --white: #fff;
+    --purpule: #5C62EC;
+
+    --page-text-color: var(--black);
+    --dark-bg: var(--black);
+    --dark-border: var(--black-border);
+    --header-text: var(--white);
+    --accent: var(--purpule);
+}
+
 html, body{
     font-family: 'DM Sans', sans-serif;
+    letter-spacing: -0.5px;
+    color: var(--page-text-color);
 }
+
+.container{
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header start */
+
+.header{
+    background-color: var(--dark-bg);
+    border-bottom: 1px solid var(--dark-border);
+    padding: 20px 0;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header__logo{
+    color: var(--header-text);
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.header__logo span{
+    font-weight: 700;
+}
+
+.menu__list{
+    display: flex;
+    column-gap: 40px;
+}
+
+/* .menu__list-item{
+    margin-right: 40px;
+}
+
+.menu__list-item:last-child{
+    margin-right: 0;
+} */
+
+.menu__link{
+    color: var(--header-text);
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu__link--active{
+    position: relative;
+}
+
+.menu__link--active::before{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--accent);
+}
+
+/* Header end */
+
+/* Main start */
+
+/* about-me start */
+
+.about-me {
+    margin-bottom: 35px;
+    padding: 40px 0;
+    min-height: 695px;
+
+    background-color: var(--dark-bg);
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-bg);
+    background-image: url(./../img/about-me-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+
+    color: var(--white);
+    text-align: center;
+
+    
+}
+
+.about-me__wrapper {
+    padding: 0 15px;
+    max-width: 660px;
+}
+
+.about-me__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.about-me__title strong{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about-me__title em{
+    font-style: normal;
+    color: var(--accent);
+}
+
+.about-me__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.333;
+}
+
+.about-me__text p + p{
+    margin-top: 1em;
+}
+
+.btn {
+    padding: 12px 28px;
+    background-color: var(--accent);
+    border-radius: 5px;
+    
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+
+    transition: all .3s ease-in;
+}
+
+.btn:hover{
+    background-color: #363872;
+}
+
+.btn:active{
+    position: relative;
+    top: 1px;
+}
+
+
+/* about-me end */
+
+/* Projects start */
+.projects {
+    padding: 35px 0;
+}
+
+.projects__title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--accent);
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+.projects__list-item {
+    max-width: 370px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.project__title {
+    padding: 15px 20px 25px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;;
+}
+
+/* Projects end */
+
+/* Main end */
+
+/* Footer start */
+.footer {
+    padding: 60px 0 50px;
+    margin-top: 35px;
+    background-color: var(--dark-bg);
+}
+
+.social {
+    margin-bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 27px;
+}
+
+.copyrigth{
+    color: var(--white);
+    text-align: center;
+}
+
+.copyrigth p + p{
+    margin-top: 0.5em;
+}
+
+/* Footer end */
