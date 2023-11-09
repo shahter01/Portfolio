@@ -104,6 +104,7 @@ html, body{
 /* about-me start */
 
 .about-me {
+    margin-bottom: 35px;
     padding: 40px 0;
     min-height: 695px;
 
@@ -122,6 +123,8 @@ html, body{
 
     color: var(--white);
     text-align: center;
+
+    
 }
 
 .about-me__wrapper {
@@ -180,12 +183,44 @@ html, body{
 }
 
 
-
-
-
-
-
 /* about-me end */
 
+/* Projects start */
+.projects {
+    padding: 35px 0;
+}
+
+.projects__title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--accent);
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+.projects__list-item {
+    max-width: 370px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.project__title {
+    padding: 15px 20px 25px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;;
+}
+
+/* Projects end */
 
 /* Main end */
