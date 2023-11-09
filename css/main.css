@@ -38,6 +38,7 @@ html, body{
     border-bottom: 1px solid var(--dark-border);
     padding: 20px 0;
     letter-spacing: normal;
+    color: var(--white);
 }
 
 .header__wrapper{
@@ -224,3 +225,30 @@ html, body{
 /* Projects end */
 
 /* Main end */
+
+/* Footer start */
+.footer {
+    padding: 60px 0 50px;
+    margin-top: 35px;
+    background-color: var(--dark-bg);
+}
+
+.social {
+    margin-bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 27px;
+}
+
+.copyrigth{
+    color: var(--white);
+    text-align: center;
+}
+
+.copyrigth p + p{
+    margin-top: 0.5em;
+}
+
+/* Footer end */
