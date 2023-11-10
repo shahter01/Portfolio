@@ -278,15 +278,18 @@ html, body{
 
 /* Skills start */
 .content__list {
+    padding-bottom: 100px;
     margin: 0 auto;
-    padding-bottom: 200px;
     max-width: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
     text-align: center;
-    
+}
+
+.content__list a{
+    color: var(--accent);
 }
 
 .content__list-item {
@@ -315,8 +318,6 @@ html, body{
     padding: 60px 0 50px;
     margin-top: 35px;
     background-color: var(--dark-bg);
-    height: 100%;
-    width: 100%;
 }
 
 .social {
