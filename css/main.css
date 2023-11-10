@@ -48,6 +48,7 @@ html, body{
     column-gap: 30px;
     row-gap: 20px;
     flex-wrap: wrap;
+    
 }
 
 .header__logo{
@@ -205,7 +206,7 @@ html, body{
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
-
+    justify-content: center;
 }
 
 .projects__list-item {
@@ -339,3 +340,47 @@ html, body{
 }
 
 /* Footer end */
+
+
+
+@media(max-width: 620px){
+    .about-me{
+        min-height: unset;
+    }
+
+    .about-me__title{
+        font-size: 30px;
+    }
+
+    .about-me__title strong{
+        font-size: 40px;
+    }
+
+    .projects, .skills{
+        padding: 20px 0;
+    }
+
+    .projects__title, .skills__title{
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .project__title{
+        font-size: 20px;
+    }
+
+    .footer{
+        padding: 40px 0 30px;
+    }
+
+    
+
+    .social{
+        column-gap: 15px;
+        row-gap: 20px;
+    }
+    
+    .social__item{
+        width: 28px;
+    }
+}
