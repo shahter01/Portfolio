@@ -187,11 +187,11 @@ html, body{
 /* about-me end */
 
 /* Projects start */
-.projects {
+.projects, .skills {
     padding: 70px 0;
 }
 
-.projects__title {
+.projects__title, .skills__title{
     margin-bottom: 60px;
     text-align: center;
     font-size: 60px;
@@ -276,6 +276,38 @@ html, body{
 
 /* Prijects detail end */
 
+/* Skills start */
+.content__list {
+    margin: 0 auto;
+    padding-bottom: 200px;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    text-align: center;
+    
+}
+
+.content__list-item {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content__list-item p + p{
+    margin-top: 0.5em;
+}
+
+.skills__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+/* Skills end */
+
 /* Main end */
 
 /* Footer start */
@@ -283,6 +315,8 @@ html, body{
     padding: 60px 0 50px;
     margin-top: 35px;
     background-color: var(--dark-bg);
+    height: 100%;
+    width: 100%;
 }
 
 .social {
